@@ -1,0 +1,80 @@
+.box{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+/* 头部区域 */
+header{
+	background: rgb(138, 121, 105);
+	height:5.5rem;
+	display: flex;
+	align-items: center;
+	padding:0 1rem;
+}
+/* 共同样式 */
+header .common{
+	font-size: 2rem;
+	color:white;
+	padding:1.2rem;
+	font-weight: 900;
+}
+/* 主体部分 */
+main{
+	flex: 1;
+	padding: 2rem;
+}
+/* 输入框的样式 */
+main .common{
+	border:none;
+	height:4rem;
+	padding:0;
+	border-bottom: 0.1rem solid rgb(200, 200, 200);
+	background: none;
+	border-radius: 0;
+	font-size: 1.6rem;
+	caret-color:deeppink;
+	margin:1rem 0;
+}
+main .common::-webkit-input-placeholder{
+	color:rgb(182, 182, 182);
+}
+main .active{
+	border-bottom: 0.1rem solid deeppink;
+}
+/* 验证码 */
+main .dCode{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 获取验证码 */
+main .dCode>div>button{
+	margin: 0 0 0.9rem 1.5rem;
+	border:none;
+	color:rgb(4, 4, 4);
+	background: rgb(216, 216, 216);
+	height:3.7rem;
+	font-size: 1.4rem;
+	width:9.4rem;
+}
+/* 已发送之后的样式 */
+main .dCode>div>button.isSend{
+	color:grey;
+}
+main .dCode>div>button.isSend>b{
+	color:red;
+	font-weight: 500;
+}
+/* 注册按钮样式 */
+main .btn{
+	background: rgb(138, 119, 104);
+	display: block;
+	box-sizing: border-box;
+	height: 5rem;
+	color:white;
+	font-size: 1.6rem;
+	font-weight: 900;
+	text-align: center;
+	line-height: 5rem;
+	margin-top: 2rem;
+}

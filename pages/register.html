@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/mui.js"></script>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=Math.floor(document.documentElement.clientWidth/36)+"px";
+			mui.init({
+				beforeback: function(){
+					//获得列表界面的webview
+					var login = plus.webview.getWebviewById('login');
+					//触发列表界面的自定义事件（refresh）,从而进行数据刷新
+					mui.fire(login,'refresh');
+					//返回true，继续页面关闭逻辑
+					return true;
+				}
+			});
+			mui.plusReady(function() {
+				//设置状态栏的背景颜色
+				plus.navigator.setStatusBarBackground('rgb(138, 121, 105)');
+				//设置系统状态栏样式 (可选值:dark,light,UIStatusBarStyleDefault,UIStatusBarStyleBlackOpaque)
+				plus.navigator.setStatusBarStyle('white');
+			})
+		</script>
+		<script src="../js/register/more.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/register/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<!-- 头部区域 -->
+			<header>
+				<span class="mui-icon common mui-icon-back"></span>
+				<span class="common">注册</span>
+			</header>
+			<main>
+				<input class="common username" type="text" placeholder="用户名">
+				<input class="common password" type="password" placeholder="密码">
+				<input class="common email" type="email" placeholder="邮箱">
+				<div class="dCode">
+					<input class="common code" type="number" placeholder="验证码">
+					<div class="change">
+						<button class="willSend">获取验证码</button>
+						<!-- <button class="isSend">已发送 <b>59</b></button> -->
+					</div>
+				</div>
+				<butto class="btn">注册</butto>
+			</main>
+		</div>
+	</body>
+</html>

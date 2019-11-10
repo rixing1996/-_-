@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <script type="text/javascript" charset="utf-8">
+		document.getElementsByTagName("html")[0].style.fontSize=Math.floor(document.documentElement.clientWidth/36)+"px";
+		mui.init();
+		mui.plusReady(function() {
+			//设置状态栏的背景颜色
+			plus.navigator.setStatusBarBackground('rgb(138, 121, 105)');
+			//设置系统状态栏样式 (可选值:dark,light,UIStatusBarStyleDefault,UIStatusBarStyleBlackOpaque)
+			plus.navigator.setStatusBarStyle('white');
+		})
+    </script>
+	<script src="js/index/more.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="box">
+		<!-- 头部标题部分 -->
+		<header>
+			<div class="left">
+				<span class="mui-icon common mui-icon-bars"></span>
+				<span class="common title">私人笔记</span>
+			</div>
+			<div class="right">
+				<span class="mui-icon common mui-icon-search"></span>
+				<span class="mui-icon common iconfont icon-rili"></span>
+				<span class="mui-icon common iconfont icon-gengduo1"></span>
+			</div>
+		</header>
+		<!-- 主体部分 -->
+		<main>
+			<!-- 侧滑部分 -->
+			<aside>
+				<div class="left">
+					<!-- 个人信息 -->
+					<div class="user">
+						<img src="static/default.jpg" >
+						<div>
+							<span class="username">私人笔记</span>
+							<span class="desc">记录你的美好时光</span>
+						</div>
+					</div>
+					<!-- 分类类型 -->
+					<div class="type">
+						<div>
+							<span class="typeName">全部笔记 </span><span>(0)</span>
+						</div>
+					</div>
+					<!-- 分类管理 -->
+					<div class="typeManage">
+						<span class="mui-icon iconfont icon-fenlei"></span>
+						<span>分类管理</span>
+					</div>
+					<!-- 废纸篓 -->
+					<div class="rubis">
+						<span class="mui-icon iconfont icon-lajigarbage8"></span>
+						<span>废纸篓（0）</span>
+					</div>
+				</div>
+				<div class="right"></div>
+			</aside>
+			<!-- 主体内容部分 -->
+			<div class="content">
+				1111
+			</div>
+			<!-- 添加笔记图标 -->
+			<div class="addTitle">
+				<span class="mui-icon iconfont icon-tianjia"></span>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

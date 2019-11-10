@@ -1,0 +1,136 @@
+.box{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+/* 头部区域 */
+header{
+	background: rgb(138, 121, 105);
+	height:5.5rem;
+	display: flex;
+	align-items: center;
+	padding:0 1rem;
+}
+/* 共同样式 */
+header .common{
+	font-size: 2rem;
+	color:white;
+	padding:1.2rem;
+	font-weight: 900;
+}
+/* 主体部分 */
+main{
+	flex: 1;
+	padding: 1.4rem;
+	overflow: auto;
+}
+/* 内容共同部分 */
+.commonUser{
+	padding:1.4rem 0;
+	border-top: 0.1rem solid rgb(220, 220, 220);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* 左边的文字 */
+.commonUser>span{
+	color:rgb(100, 100, 100);
+	font-size: 1.6rem;
+}
+/* 右边的样式 */
+.commonUser .right{
+	display: flex;
+	align-items: center;
+}
+.commonUser .right>img{
+	width: 6rem;
+	height:6rem;
+	border-radius: 50%;
+}
+/* 右边文字样式 */
+.commonUser .right>span{
+	font-size: 1.4rem;
+	color:rgb(174, 174, 174);
+}
+/* 右标的样式 */
+.commonUser .right>span.mui-icon-arrowright{
+	font-size: 2.2rem;
+	margin-left: 0.4rem;
+}
+/* 个性签名样式 */
+.desc{
+	padding:1.4rem 0;
+	border-top: 0.1rem solid rgb(220, 220, 220);
+	border-bottom: 0.1rem solid rgb(220, 220, 220);
+}
+.desc .top{
+	display: flex;
+	justify-content: space-between;
+}
+.desc .top>span{
+	color:rgb(100, 100, 100);
+	font-size: 1.6rem;
+}
+.desc .top>span.mui-icon-arrowright{
+	font-size: 2.2rem;
+	margin-left: 0.4rem;
+	color:rgb(174, 174, 174);
+}
+/* 描述内容 */
+.desc>p{
+	font-size: 1.4rem;
+	color:rgb(174, 174, 174);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	line-height: 2rem;
+	margin: 0;
+}
+/* 退出登录样式 */
+.tuichu{
+	margin-top: 2.5rem;
+}
+.tuichu>button{
+	background: rgb(240, 112, 98);
+	width: 100%;
+	height:5rem;
+	color:white;
+	font-size: 1.6rem;
+	border:none;
+}
+/* 用户名修改框 */
+.showCommon{
+	padding:3rem 2rem;
+	width: 90%;
+	background: white;
+	border-radius: 1rem;
+	position: fixed;
+	left:5%;
+	top:50%;
+	display: none;
+}
+.showCommon>input{
+	border:none;
+	padding: 0;
+	height:4rem;
+	border-bottom: 0.1rem solid grey;
+	font-size: 1.6rem;
+	border-radius: 0;
+}
+.showCommon>div{
+	display: flex;
+	justify-content: space-between;
+	padding:0 3rem;
+	margin-top: 1rem;
+}
+.showCommon>div>button{
+	font-size: 1.5rem;
+	border:none;
+}
+.showCommon>div>button.no{
+	color:red;
+}
+.showCommon>div>button.ok{
+	color:blue;
+}

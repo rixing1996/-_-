@@ -1,0 +1,37 @@
+.box{
+	display: flex;
+	flex-direction: column;
+}
+/* 头部部分 */
+header{
+	background: rgb(138, 121, 105);
+	height:5.5rem;
+	display: flex;
+	align-items: center;
+}
+/* 头部输入框 */
+header .content{
+	background: rgb(138, 121, 105);
+	border: none;
+	color:white;
+	margin: 0 1rem;
+	font-size: 1.8rem;
+	height:4rem;
+	padding: 0;
+}
+header .content::-webkit-input-placeholder{
+	color:white;
+}
+/* 图标共同样式 */
+header .mui-icon{
+	padding:0.8rem;
+	font-size: 2.5rem;
+	color:white;
+}
+/* 清除图标的样式 */
+header .mui-icon-closeempty{
+	font-size: 3.5rem;
+	padding: 0;
+	font-weight: 900;
+	margin-right: 0.5rem;
+}

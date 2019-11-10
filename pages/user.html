@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=Math.floor(document.documentElement.clientWidth/36)+"px";
+			mui.init({
+				beforeback: function(){
+					//获得列表界面的webview
+					var index = plus.webview.getLaunchWebview();
+					//触发列表界面的自定义事件（refresh）,从而进行数据刷新
+					mui.fire(index,'refresh');
+					//返回true，继续页面关闭逻辑
+					return true;
+				}
+			});
+			mui.plusReady(function() {
+				//设置状态栏的背景颜色
+				plus.navigator.setStatusBarBackground('rgb(138, 121, 105)');
+				//设置系统状态栏样式 (可选值:dark,light,UIStatusBarStyleDefault,UIStatusBarStyleBlackOpaque)
+				plus.navigator.setStatusBarStyle('white');
+			})
+		</script>
+		<script src="../js/user/more.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/user/user.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<span class="mui-icon common mui-icon-back"></span>
+				<span class="common">用户中心</span>
+			</header>
+			<main>
+				<!-- 头像部分 -->
+				<div class="commonUser touxiang">
+					<span>头像</span>
+					<div class="right">
+						<img src="" >
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</div>
+				<!-- 用户名 -->
+				<div class="commonUser username">
+					<span class="btn2">用户名</span>
+					<div class="right">
+						<span class="name"></span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</div>
+				<!-- 性别 -->
+				<div class="commonUser gender">
+					<span>性别</span>
+					<div class="right">
+						<span class="xingbie"></span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</div>
+				<!-- 年龄 -->
+				<div class="commonUser age">
+					<span>年龄</span>
+					<div class="right">
+						<span class="nianling"></span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</div>
+				<!-- 地址 -->
+				<div class="commonUser address">
+					<span>地址</span>
+					<div class="right">
+						<span class="dizhi"></span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</div>
+				<!-- 个性签名 -->
+				<div class="desc">
+					<div class="top">
+						<span>个性签名</span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+					<p></p>
+				</div>
+				<!-- 退出登录 -->
+				<div class="tuichu">
+					<button>退出登录</button>
+				</div>
+			</main>
+			<!-- 用户名修改弹窗 -->
+			<div class="showCommon showUsername">
+				<input type="text" placeholder="请输入修改的值">
+				<div>
+					<button class="no">取消</button>
+					<button class="ok">确定</button>
+				</div>
+			</div>
+			<!-- 性别修改弹窗 -->
+			<div class="showCommon showGender">
+				<input type="text" placeholder="请输入修改的值">
+				<div>
+					<button class="no">取消</button>
+					<button class="ok">确定</button>
+				</div>
+			</div>
+			<!-- 年龄修改弹窗 -->
+			<div class="showCommon showAge">
+				<input type="number" placeholder="请输入修改的值">
+				<div>
+					<button class="no">取消</button>
+					<button class="ok">确定</button>
+				</div>
+			</div>
+			<!-- 地址修改弹窗 -->
+			<div class="showCommon showAddress">
+				<input type="text" placeholder="请输入修改的值">
+				<div>
+					<button class="no">取消</button>
+					<button class="ok">确定</button>
+				</div>
+			</div>
+			<!-- 个性签名修改弹窗 -->
+			<div class="showCommon showDesc">
+				<input type="text" placeholder="请输入修改的值">
+				<div>
+					<button class="no">取消</button>
+					<button class="ok">确定</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/search.css"/>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=Math.floor(document.documentElement.clientWidth/36)+"px";
+			mui.init();
+			mui.plusReady(function() {
+				//设置状态栏的背景颜色
+				plus.navigator.setStatusBarBackground('rgb(138, 121, 105)');
+				//设置系统状态栏样式 (可选值:dark,light,UIStatusBarStyleDefault,UIStatusBarStyleBlackOpaque)
+				plus.navigator.setStatusBarStyle('white');
+			})
+		</script>
+		<script src="../js/search/more.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/search/search.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="box">
+			<header>
+				<span class="mui-icon mui-icon-back"></span>
+				<input autofocus="autofocus" class="content" type="text" placeholder="请输入关键字" />
+				<span class="mui-icon mui-icon-mic"></span>
+				<span class="mui-icon mui-icon-closeempty"></span>
+			</header>
+		</div>
+	</body>
+</html>
